@@ -19,25 +19,17 @@ class MyApp extends StatelessWidget {
                   padding: const EdgeInsets.only(bottom: 8),
                   child: const Text(
                     'Mount Bromo',
-                    style: TextStyle(
-                      fontWeight: FontWeight.bold,
-                      fontSize: 20,
-                    ),
+                    style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
                   ),
                 ),
                 Text(
                   'A Spectacular Indonesia Mountain',
-                  style: TextStyle(
-                    color: Colors.grey[500],
-                  ),
+                  style: TextStyle(color: Colors.grey[500]),
                 ),
               ],
             ),
           ),
-          Icon(
-            Icons.star,
-            color: Colors.red[500],
-          ),
+          Icon(Icons.star, color: Colors.red[500]),
           const Text('41'),
         ],
       ),
@@ -143,5 +135,3 @@ class MyApp extends StatelessWidget {
     );
   }
 }
-
-  
