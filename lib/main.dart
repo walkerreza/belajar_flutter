@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_1/tampilan_layar.dart';
+import 'package:flutter_application_1/ui/mahasiswa_form.dart';  
 
 void main() {
   runApp(const MainApp());
@@ -10,7 +10,7 @@ class MainApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: Scaffold(body: MyApp()),
+      home: Scaffold(body: MahasiswaForm()),
     );
   }
 }

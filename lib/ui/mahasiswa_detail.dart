@@ -1,6 +1,12 @@
 import 'package:flutter/material.dart';
 class MhsDetail extends StatefulWidget {
-const MhsDetail({super.key});
+ final String? namaMhs;
+ final String? nimMhs;
+ final String? genderMhs;
+ final String? tglLahirMhs;
+ const MhsDetail(
+ {this.nimMhs, this.namaMhs, this.genderMhs,
+this.tglLahirMhs, super.key});
  @override
  State<MhsDetail> createState() => _MhsDetailState();
 }
@@ -12,17 +18,16 @@ class _MhsDetailState extends State<MhsDetail> {
  appBar: AppBar(
  title: const Text("Detail Mahasiswa"),
  ),
- body: ListView.builder(
- padding: EdgeInsets.all(10),
- itemCount: 100,
- itemBuilder: (BuildContext context, int index) {
- return ListTile(
- leading: Image.network(
- "https://cdn.pixabay.com/photo/2018/02/24/23/05/architecture-3179435_960_720.jpg",
- ),
- title: Text("ini item $index"));
- },
+ body: SingleChildScrollView(
+ child: Column(
+ children: [
+ Text("Nim :" + widget.nimMhs.toString()),
+ Text("Nama :" + widget.namaMhs.toString()),
+ Text("Jenis Kelamin :${widget.genderMhs}"),
+ Text("Tanggal Lahir :${widget.tglLahirMhs}")
+ ],
  )),
+ ),
  );
  }
 }
