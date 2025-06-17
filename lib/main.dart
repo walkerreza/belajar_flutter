@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_1/ui/mahasiswa_form.dart';  
+// import 'package:flutter_application_1/ui/dashboard.dart';
+import 'package:flutter_application_1/ui/splashscreen.dart';
 
 void main() {
   runApp(const MainApp());
@@ -10,7 +11,8 @@ class MainApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: Scaffold(body: MahasiswaForm()),
+      debugShowCheckedModeBanner: false,
+      home: SplashScreen(),
     );
   }
 }
